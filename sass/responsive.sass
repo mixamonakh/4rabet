@@ -1,0 +1,319 @@
+@media(min-width: 1400px)
+    .container
+        max-width: 1160px
+@media( max-width: 1500px )
+    .error
+        img
+            width: 300px
+@media( max-width: 1200px )
+    .banner
+        .button_blue
+            font-size: 16px
+            min-height: 40px
+        .banner__text
+            font-size: 30px
+    img
+        width: 100%
+@media( max-width: 768px )
+    .banner
+        background: url('../image/banners/banner-2.png')no-repeat 0%/contain
+        padding: 13% 50px 5% 20px
+        &__logo
+            img
+                width: 72px
+                height: 19px
+                margin-bottom: 10px
+        &__text
+            font-size: 32px
+            margin-bottom: 10px
+            display: block
+            text-align: center
+            padding: 0 10%
+        &__content
+            flex-direction: column
+        &__btn
+            font-size: 12px
+            min-width: 114px
+            min-height: 33px
+    
+    .error
+        & > img
+            display: none
+    .header
+        padding: 22px 0 23px 0
+        position: fixed
+        width: 100%
+        background-color: var(--white)
+        top: 0
+        z-index: 3
+    main
+        margin-top: 80px
+    .menu-btn
+        display: flex
+        span
+            transition: var(--transition-def)
+            &:nth-child(1)
+                transform-origin: 0 100%
+            &:nth-child(3)
+                transform-origin: 0 0
+        &.active
+            span
+                &:nth-child(1)
+                    height: 4.65px
+                    transform: rotate(45deg)
+                &:nth-child(2)
+                    opacity: 0
+                &:nth-child(3)
+                    height: 4.65px
+                    width: 100%
+                    transform: rotate(-45deg)
+    .menu
+        position: absolute
+        right: -1000px
+        top: 80px
+        transition: var(--transition-def)
+        &.active
+            right: 0
+        ul
+            background: rgba(255, 255, 255, 0.77)
+            box-shadow: 0px 11px 22px 0px rgba(0, 0, 0, 0.25)
+            backdrop-filter: blur(38.5px)
+            flex-direction: column
+            width: 350px
+            padding: 72px 80px 85px 83px
+            border-radius: 0 0 22px 22px
+            li
+                margin-bottom: 18px
+                &:nth-last-child(1)
+                    margin-bottom: 0
+        &__link
+            font-size: 25px
+    h1
+        font-size: 48px
+        line-height: 118%
+    h2, h3
+        font-size: 28px
+    p
+        margin-bottom: 15px
+    .mb40, .mb45
+        margin-bottom: 20px
+    .mb35, .mb30
+        margin-bottom: 20px
+    .first-screen
+        margin-bottom: 44px !important
+    .first-screen__box
+        padding: 0
+    .first-screen__content
+        top: 130px
+    .button
+        font-size: 20px
+    body
+        font-size: 15px
+        line-height: 18px
+    .triggers__images
+        img
+            width: 111px
+    .section
+        margin-bottom: 90px
+        &__title
+            padding: 0 !important
+            text-align:  left !important
+            margin-bottom: 20px
+        .table
+            flex-direction: column
+            border-bottom: 0
+            .col
+                font-size: 18px
+                display: flex
+                flex-direction: row
+                border-right: 0
+                .head
+                    justify-content: flex-start
+                    border-right: 1px solid #DBDBDB
+                    text-align: left
+                .main
+                    border-bottom: 1px solid #DBDBDB
+                & > div
+                    flex: 0 0 50%
+        .table-two
+            flex-direction: row
+            width: 100%
+            border-bottom: 1px solid #DBDBDB
+            .col
+                flex-direction: column
+                font-size: 16px
+                .head
+                    justify-content: center !important
+                    border-right: 0
+                &:nth-child(2), &:nth-child(3)
+                    .box
+                        justify-content: center !important
+                        border-left: 1px solid #DBDBDB
+                & > div
+                    flex: 0
+                    min-height: 75px !important
+        .cards
+            margin-right: -13px
+            .card-item
+                width: calc( 50% - 13px)
+                margin-right: 13px
+                font-size: 13px
+
+        &-1
+            img
+                width: 268px
+                margin: 0 auto
+                display: block
+            .box
+                ul
+                    margin-top: 20px
+                    li
+                        margin-bottom: 10px
+        &-2
+            .mob-center
+                text-align: center
+        &-3
+            .rowbox
+                flex-direction: column-reverse
+        &-5
+            .card-item
+                height: 51px
+            img
+                border-radius: 22px
+        &-6
+            img
+                width: 300px
+        &-7
+            img
+                border-radius: 22px
+        &-8
+            .block
+                position: relative
+                img
+                    position: absolute
+                    top: 0
+                    right: 0
+                    width: 150px
+        &-10
+            border-radius: 22px
+            .table
+                .col
+                    font-size: 16px
+                    &:nth-child(6)
+                        .main
+                            font-size: 13px
+                    &>div
+                        flex: 0 0 33.3%
+                    .main
+                        min-height: 75px
+                        &:nth-child(2)
+                            border-right: 1px solid #DBDBDB
+            .list
+                .images
+                    position: absolute
+                    top: 0px
+                    right: 0px
+                    width: 120px
+        &-11
+            .rowbox
+                flex-direction: column-reverse
+        &-12
+            .cards
+                margin-right: 0
+                .card-item
+                    font-size: 16px
+                    margin: 0 33px
+                    width: 100%
+                    margin-bottom: 20px
+                    min-height: auto
+                    padding: 24px 10px
+        &-13
+            img
+                border-radius: 22px
+        &-14
+            .rowbox
+                flex-direction: column-reverse
+        &-15
+            overflow: hidden
+            padding-bottom: 20px
+            margin-bottom: 70px
+            .images
+                img
+                    position: absolute
+                    right: -30px
+                    bottom: -90px
+                    width: 120px
+        &-16, &-17
+            img
+                width: 260px
+                display: block
+                margin: 0 auto
+        &-17
+            .rowbox
+                flex-direction: column-reverse
+        &-18
+            img
+                border-radius: 22px
+        &-19
+            img
+                border-radius: 22px
+                margin-bottom: 20px
+            .rowbox
+                flex-direction: column-reverse
+        &-20
+            .content
+                margin-bottom: 20px
+        &-22
+            .block
+                padding: 0
+            .wrapper
+                .box
+                    span
+                        font-size: 14px
+                        &:nth-child(1)
+                            flex: 0 0 40%
+                            font-size: 18px
+                        &:nth-child(2)
+                            flex: 0 0 60%
+                            padding: 20px
+        &-24
+            margin-bottom: 70px
+            .wrapper
+                margin-right: 0
+                .box
+                    margin-bottom: 20px
+                    font-size: 16px
+                    width: 100%
+                    margin-right: 0
+                    &:nth-child(4)
+                        padding: 40px 40px 20px 30px
+                .images-1
+                    width: 170px
+                .images-2
+                    width: 134px
+                        
+    .footer
+        padding: 45px 9px
+        .top
+            padding-bottom: 60px
+            position: relative
+            .footer__img
+                position: absolute
+                right: 0
+                width: 56px
+                height: 57px
+                bottom: -30px
+        .mail
+            margin-bottom: 5px
+        .grid
+            grid-template-areas: "left top" "bot bot"
+            grid-template-columns: 1fr .3fr
+            grid-template-rows: 1fr 1fr
+        .menu-footer
+            ul
+                flex-direction: column
+                li
+                    margin-bottom: 12px
+                    &:nth-last-child(1)
+                        margin-bottom: 0
+                        

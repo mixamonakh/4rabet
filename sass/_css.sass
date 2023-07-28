@@ -1,0 +1,541 @@
+*
+    font-family: 'Inter', sans-serif
+.open-sans
+    font-family: 'Open Sans', sans-serif
+
+h1
+    font-size: 60px
+    line-height: 141%
+    font-weight: 800
+    font-family: 'Open Sans'
+h2, h3
+    font-size: 36px
+    font-weight: 700
+h4
+    font-size: 24px
+    font-weight: 600
+p
+    margin: 0
+    margin-bottom: 20px
+    &:nth-last-child(1)
+        margin-bottom: 0
+
+.fw400
+    font-weight: 400
+.fw500
+    font-weight: 500
+.fw600
+    font-weight: 600
+.fw700
+    font-weight: 700
+.fw800
+    font-weight: 800
+
+:root
+    --transition-def: .4s all
+
+    --white: #fff
+    --black: #000
+    --green: #3AFF42
+    --blue: #08227C
+    --header-link: #1B1B38
+    --hamburger-header-link: #5C7391
+    --hamburger-btn: #3486E3
+body
+    color: var(--black)
+    font-size: 18px
+    line-height: 22px
+.mb10
+    margin-bottom: 10px
+.mb15
+    margin-bottom: 15px
+.mb20
+    margin-bottom: 20px
+.mb25
+    margin-bottom: 25px
+.mb30
+    margin-bottom: 30px
+.mb35
+    margin-bottom: 35px
+.mb40
+    margin-bottom: 40px
+.mb45
+    margin-bottom: 45px
+.mb50
+    margin-bottom: 50px
+.ul-unset
+    margin: 0
+    padding: 0
+    list-style-type: none
+.section
+    margin-bottom: 130px
+    &__title
+        margin-bottom: 30px
+        text-align: center
+
+
+.button
+    border-radius: 11px
+    background-color: var(--green)
+    display: inline-flex
+    align-items: center
+    font-size: 18px
+    font-weight: 600
+    justify-content: center
+    text-decoration: none
+    color: var(--blue)
+    min-height: 56px
+    min-width: 188px
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    transition: var(--transition-def)
+    &_error
+        font-size: 33px
+        font-weight: 700
+        width: 315px
+        height: 90px
+        background-color: #FF9413
+        color: var(--white)
+    &_blue
+        background-color: #3486E3
+        font-size: 20px
+        font-weight: 700
+        color: var(--white)
+
+    &:hover
+        color: var(--black)
+
+.header
+    box-shadow: 0px 11px 22px 0px #002A4A38
+    padding: 30px 0
+    &__logo
+        img
+            width: 131px
+            height: 35px
+    &__box
+        display: flex
+        align-items: center
+        justify-content: space-between
+.menu
+    ul
+        width: 650px
+        display: flex
+        justify-content: space-between
+    &__link
+        color: var(--header-link)
+        font-weight: 800
+        font-size: 16px
+        text-decoration: none
+.menu-btn
+    width: 36px
+    height: 31px
+    display: none
+    flex-direction: column
+    align-items: flex-end
+    justify-content: space-between
+    cursor: pointer
+    span
+        background-color: var(--hamburger-btn)
+        height: 4px
+        display: block
+        border-radius: 2.5px
+        width: 36px
+        &:nth-child(2)
+            width: 31px
+        &:nth-child(3)
+            width: 25px
+.first-screen
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    margin-bottom: 78px
+    &__image
+        width: 100%
+        img
+            width: 100%
+    &__content
+        position: absolute
+    &__box
+        padding: 0 18%
+    h1
+        color: var(--white)
+.triggers
+    &__content
+        margin-bottom: 33px
+    &__images
+        display: flex
+        justify-content: space-between
+.section
+    .cards
+        display: flex
+        flex-wrap: wrap
+        margin-right: -20px
+        .card-item
+            margin-bottom: 10px
+            margin-right: 20px
+            width: calc( 33% - 20px)
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 15px
+            background: #FAFBFB
+            box-shadow: 0px 6px 13px 0px rgba(0, 0, 0, 0.11)
+    .table
+        display: flex
+        border-radius: 4px
+        border: 1px solid #DBDBDB
+        .col
+            display: flex
+            flex-direction: column
+            text-align: center
+            border-right: 1px solid #DBDBDB
+            & > div
+                display: flex
+                align-items: center
+                justify-content: center
+                min-height: 75px
+            &:nth-last-child(1)
+                border: 0
+            span
+                background-color: transparent
+            .head
+                background-color: #F3F4FA
+                border-bottom: 1px solid #DBDBDB
+                &:nth-last-child(1)
+                    border: 0
+    .table-two
+        width: 83%
+        .box
+            min-height: 40px !important
+            border-bottom: 1px solid #DBDBDB
+            justify-content: flex-start !important
+            &:nth-last-child(1)
+                border-bottom: 0
+    .images
+        position: relative
+    &-1
+        .box
+            align-items: center
+            ul
+                margin: 0
+            li
+                margin-bottom: 15px
+                &:nth-last-child(1)
+                    margin-bottom: 0
+                    
+    &-2
+        .images
+            
+    &-3
+        .images
+            .button
+                margin-left: 32%
+    &-4
+        ol
+            li
+                margin-bottom: 15px
+                &:nth-last-child(1)
+                    margin-bottom: 0
+    &-5
+        .section__title
+            padding: 0 13%
+        .card-item
+            height: 87px
+    &-6
+        .section__title
+            padding: 0 18%
+    &-7
+        .section__title
+            padding: 0 18%
+        ol
+            li
+                margin-bottom: 15px
+    &-8
+        .section__title
+            padding: 0 20%
+        .block
+            display: flex
+            justify-content: space-between
+    &-9
+        ol
+            line-height: 20px
+    &-10
+        .section__title 
+            padding: 0 19%
+        .table
+            .col
+                &:nth-child(6)
+                    .main
+                        font-size: 15px
+                        line-height: 16px
+            .main
+                &:nth-child(2)
+                    min-height: 127px
+                    border-bottom: 1px solid #DBDBDB
+        .list
+            position: relative
+            .images
+                position: absolute
+                top: 0
+                right: 0
+    &-11
+    &-12
+        .section__title 
+            padding: 0 19%
+        .cards 
+            .card-item
+                align-items: flex-start
+                gap: 5px
+                padding: 10px
+                min-height: 102px
+    &-13
+    &-14
+        .rowbox
+            align-items: center
+    &-15
+        .content
+            position: relative
+        .images
+            position: absolute
+            right: 0
+            bottom: 70px
+    &-16
+    &-17
+    &-18
+    &-19
+    &-20
+        .images-desc
+            img
+                display: block
+                margin-left: auto
+    &-21
+    &-22
+        .block
+            padding: 0 4%
+        .wrapper
+            border: 1px solid #DBDBDB
+            border-radius: 4px
+            .box
+                display: flex
+                &:nth-child(3)
+                    span
+                        border-bottom: 0
+                span
+                    background: #F9FBFD
+                    display: inline-block
+                    min-height: 75px
+                    padding: 7px 32px
+                    border-bottom: 1px solid #DBDBDB
+                    a
+                        color: var(--black)
+                    &:nth-child(1)
+                        flex: 0 0 20%
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        padding: 7px 0
+                        border-right: 1px solid #DBDBDB
+                    &:nth-child(2)
+                        flex: 0 0 80%
+    &-23
+    &-24
+        .section
+            margin-bottom: 93px
+        .wrapper
+            display: flex
+            flex-wrap: wrap
+            margin-right: -44px
+            .box
+                position: relative
+                width: calc(50% - 44px)
+                margin-right: 44px
+                margin-bottom: 37px
+                box-shadow: 0px 11px 22px 0px rgba(0, 0, 0, 0.25)
+                border-radius: 22px
+                background: #F9FBFD
+                padding: 40px 15px 20px 30px
+                min-height: 374px
+                .images-1, .images-2
+                    position: absolute
+                    right: 0
+                    bottom: 0
+                &:nth-child(4)
+                    padding: 40px 87px 20px 30px
+                    background-color: var(--green)
+
+.footer
+    border-top: 1px solid #25364D
+    background: #152234
+    padding: 30px 0 45px 0
+    &__img
+        width: 115px
+        height: 115px
+        background: url('../icons/18year.svg')no-repeat 0%/contain
+        position: absolute
+        bottom: -25px
+        display: block
+        right: -30px
+    &__text
+        font-size: 13px
+        color: #5C7391
+    .mail
+        color: rgba(92, 115, 145, 0.50)
+        font-size: 12px
+        line-height: 21px
+        margin-bottom: 20px
+        display: block
+        a
+            color: rgba(92, 115, 145, 0.50)
+    .box
+        display: flex
+        align-items: center
+        margin-bottom: 15px
+        .socials
+            display: flex
+            .social
+                display: block
+                background-size: contain
+                background-repeat: no-repeat
+                background-position: 0 0
+                width: 25px
+                height: 25px
+                &__inst
+                    background-image: url('../icons/inst.svg')
+                    margin-right: 17px
+                &__tg
+                    background-image: url('../icons/tg.svg')
+    .dropdown
+        margin-right: 40px
+        position: relative
+        &-inner
+            background: #18263A
+            max-height: 0
+            overflow: hidden
+            position: absolute
+            width: 100%
+            transition: var(--transition-def)
+            &.active
+                max-height: 200px
+            a
+                display: block
+                padding: 5px
+                color: var(--white)
+                text-decoration: none
+                border-radius: 4px
+                font-size: 12px
+        &-btn
+            display: flex
+            cursor: pointer
+            justify-content: space-between
+            align-items: center
+            width: 194px
+            border-radius: 6px
+            background: #18263A
+            padding: 8px
+            text-decoration: none
+            &.active
+                &::after
+                    transform: rotate(180deg)
+            &::after
+                content: ''
+                background: url('../icons/dropdown.svg')no-repeat 0%/contain
+                width: 14px
+                height: 14px
+                display: block
+                transition: var(--transition-def)
+            .country
+                display: flex
+                &__img
+                    margin-right: 10px
+                    width: 31px
+                    height: 30px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    border-radius: 100%
+                    overflow: hidden
+                    border: 3px solid #203045
+                    position: relative
+                    img
+                        position: absolute
+                &__box
+                    display: flex
+                    flex-direction: column
+                    span
+                        font-size: 12px
+                        letter-spacing: 0.15px
+                        line-height: 16px
+                        &:nth-child(1)
+                            color: #5C7391
+                        &:nth-child(2)
+                            color: var(--white)
+
+    .grid
+        display: grid
+        grid-template-columns: 0.8fr 1fr
+        grid-template-rows: 0.1fr 1fr
+        gap: 0px 0px
+        grid-template-areas: "left top" "left bot"
+        position: relative
+        .left
+            grid-area: left
+        .top
+            grid-area: top
+        .bot
+            grid-area: bot
+    .rabet-links
+        &__link
+            font-size: 13px
+            line-height: 20px
+            color: rgba(92, 115, 145, 0.50)
+        ul
+            li
+                margin-bottom: 10px
+                &:nth-last-child(1)
+                    margin-bottom: 0
+    .menu-footer
+        margin-bottom: 30px
+        &__link
+            font-size: 14px
+            font-weight: 800
+            font-family: 'Open Sans', sans-serif
+            text-decoration: none
+            color: #5C7391
+        ul
+            display: flex
+            justify-content: space-between
+
+.error
+    display: flex
+    align-items: center
+    padding: 30px 80px
+    justify-content: center
+    .center
+        display: flex
+        flex-direction: column
+        justify-content: center
+        .button
+            margin-top: 50px
+    img
+        width: 100%
+
+.banner
+    max-width: 1920px
+    margin: 50px auto
+    background: url('../image/banners/banner-1.png')no-repeat 0%/contain
+    padding: 3% 120px 2% 20px
+    &__content
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__logo
+        img
+            width: 168px
+            height: 45px
+    &__text
+        color: #FFF
+        font-family: Open Sans
+        font-size: 48px
+        font-weight: 800
+        line-height: 102.8%
